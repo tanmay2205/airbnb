@@ -1,0 +1,190 @@
+body{
+    font-family: "Plus Jakarta Sans", serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container{
+    flex: 1;
+}
+.navbar{
+    height: 5rem;
+    background-color: white;
+
+}
+.fa-compass{
+    color: #fe424d;
+    font-size: 2rem;
+}
+.nav-link{
+    color: #222222;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.f-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.f-info-socials {
+    display: flex;
+    gap: 10px;
+    font-size: 24px;
+}
+
+.f-info-socials i {
+    color: #fff;
+    transition: transform 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.f-info-socials i:hover {
+    transform: scale(1.2);
+    color: #ff6f61;
+}
+
+.f-info div {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.f-info-links {
+    display: flex;
+    gap: 20px;
+}
+
+.f-info-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* cards */
+.listing-card{
+    border: none !important;
+    margin-bottom: 2rem;
+} 
+
+.card-img-top{
+    border-radius: 1rem;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-body{
+    padding: 0 !important;
+}
+
+.card-text p {
+    font-weight: 400 !important;
+}
+
+.listing-link{ 
+    text-decoration: none;
+}
+/* card effect */
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white;
+}
+/* new page */
+.add-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+}
+/* edit page */
+.edit-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+/* show page */
+.show-img{
+    height: 30vh;
+}
+
+.btns{
+    display: flex;
+}
+
+.show-card{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+    #filter {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .filter {
+        text-align: center;
+        margin: 0.5rem;
+        opacity: 1;
+        flex: 0 1 10%; /* Items shrink and grow as needed */
+    }
+
+    .filter:hover {
+        opacity: 0.5;
+        cursor: pointer;
+    }
+
+    .filter p {
+        font-size: 0.8rem;
+    }
+
+    /* Media queries for responsiveness */
+    @media (max-width: 768px) {
+        .filter {
+            flex: 0 1 30%; /* Wider items on smaller screens */
+        }
+    }
+
+    @media (max-width: 576px) {
+        .filter {
+            flex: 0 1 45%; /* Almost half the screen width */
+        }
+    }
+
+    @media (max-width: 400px) {
+        #filter {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .filter {
+            flex: 1 1 100%; /* Full width on very small screens */
+        }
+    }
+
